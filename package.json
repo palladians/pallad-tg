@@ -1,0 +1,35 @@
+{
+	"name": "pallad-tg",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@sveltejs/adapter-static": "^3.0.5",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0-next.6",
+		"@types/telegram-web-app": "^7.10.1",
+		"autoprefixer": "^10.4.20",
+		"daisyui": "^4.12.13",
+		"postcss": "^8.4.47",
+		"svelte": "^5.0.5",
+		"svelte-check": "^4.0.0",
+		"tailwindcss": "^3.4.14",
+		"typescript": "^5.0.0",
+		"vite": "^5.0.3",
+		"vite-plugin-node-polyfills": "^0.22.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@mina-js/accounts": "https://pkg.pr.new/palladians/mina-js/@mina-js/accounts@main",
+		"@scure/bip39": "^1.4.0",
+		"@twa-dev/sdk": "^7.10.1",
+		"cryptr": "^6.3.0"
+	}
+}
